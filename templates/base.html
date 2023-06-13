@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}{% endblock %}</title>
+    <link rel="stylesheet" {% block css %}{% endblock %}>
+    <link rel="stylesheet" href="{{url_for('static', filename='./css/normalize.css')}}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<body>
+    <header class="navegacao">
+        <img  src="../static/imagens/logo.jpeg" alt="Logo">
+        <nav>
+            <a href="/index">Home </a>|
+            <a href="/quem-somos">Quem Somos </a>|
+            <a href="/contato">Contato </a>|
+            <a href="/users">Lista</a>
+        </nav>
+    </header>
+
+    {% block conteudo %}
+    {% endblock %}
+
+    <footer>
+        <p class="texto-footer">Todos direitos Reservados</p>
+    </footer>
+
+</body>
+</html>

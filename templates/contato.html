@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block css %}href="{{url_for('static', filename='./css/contato.css')}}"{% endblock %}
+{% block titulo %}Contato{% endblock %}
+
+
+
+{% block conteudo %}
+
+    <main class="principal">
+        <div class="principal-cima">
+            <h1>Entre em contato</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, id non?</p>
+            <hr>
+        </div>
+        <div class="principal-baixo">
+            <form method="post" action="/contato">
+                <label for="email">Seu e-mail:</label><br>
+                <input type="text" name="email" placeholder="Digite seu email"> <br>
+                <label for="assunto">Assunto:</label><br>
+                <input type="text" name="assunto" placeholder="Assunto"> <br>
+                <label for="descricao">Descrição:</label><br>
+                <input class="input-descricao" type="text" name="descricao" placeholder="Descreva o assunto"> <br>
+                <input class="input-enviar" type="submit" value="Enviar" >
+            </form>
+        </div>
+    </main>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block css %}href="{{url_for('static', filename='./css/index.css')}}"{% endblock %}
+{% block titulo %}Home{% endblock %}
+
+{% block conteudo %}
+    <main class="principal">
+        <div class="principal-img">
+            <img class="imagem-fundo-principal" src="../static/imagens/capa.jpeg">
+        </div>
+        <div class="principal-texto">
+            <h1>Sobre a Universidade</h1>
+            <p class="texto-home-principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam nemo, quidem iure sint voluptatem!
+             Velit architecto sapiente dolorum, exercitationem veniam, iste molestias ullam sit tenetur illum corrupti at error. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure nam ist
+             e, quisquam ratione dicta nulla. Repellendus, voluptates! Voluptatum debitis ea voluptatibus corrupti, molestias officiis ipsam maxime enim illo quae soluta.</p></br>
+             <p class="texto-home-principal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, sit ullam consequuntur iste, ex eius repellat expl
+            icabo ad quod soluta facere voluptates, repudiandae ducimus? Maiores doloremque facilis velit quo pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Do
+            lore error unde, itaque in nobis totam voluptatem obcaecati odio sint quibusdam ipsam! Ullam harum a commodi ut ab maxime voluptates quibusdam?</p>
+        </div>
+    </main>
+
+
+    
+{% endblock %}

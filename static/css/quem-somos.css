@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+body{
+    font: normal;
+    font-size: 15pt;
+    color: black;
+    background-color: white;
+
+}
+
+.navegacao{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 5px solid blue;
+}
+
+.navegacao nav{
+    display: flex;
+    gap: 5px;
+}
+
+
+.navegacao img{
+   height: 80px;
+   width: 280px;
+}
+
+.navegacao a{
+    font-size: 20px;
+    colo: black;
+
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgba(63, 101, 182, 0.925)
+}
+
+.principal {
+    margin-left: 335px;
+    margin-right: 335px;
+}
+
+.principal-cima{
+    padding-bottom: 25px;
+}
+
+.principal-cima h1{
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22pt;
+
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+}
+
+ol{
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.principal-baixo{
+    padding-bottom: 30px;
+}
+.principal-baixo h1{
+    padding-bottom: 24px;
+}
+
+.texto-footer{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
